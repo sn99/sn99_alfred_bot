@@ -1,8 +1,24 @@
-var telegramBot = require('node-telegram-bot-api');
+const TelegramBot = require('node-telegram-bot-api');
+const request = require('request');
 
-var token = '706018985:AAEFsF9381kcoMQU-YGFaeEFcF2xVNlS_1Q';
+const TOKEN = '706018985:AAEFsF9381kcoMQU-YGFaeEFcF2xVNlS_1Q';
 
-var api = new telegramBot(token, {polling: true});
+
+const options = {
+    polling: true
+};
+
+/*
+const options = {
+    webHook: {
+        port: 443
+    }
+};
+*/
+
+const api = new TelegramBot(TOKEN, options);
+
+NTBA_FIX_319 = 2;
 
 api.onText(/\/help/, function (msg, match) {
 
