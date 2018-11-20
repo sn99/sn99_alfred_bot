@@ -3,7 +3,6 @@ const request = require('request');
 
 const TOKEN = '706018985:AAEFsF9381kcoMQU-YGFaeEFcF2xVNlS_1Q';
 
-
 const options = {
     polling: true
 };
