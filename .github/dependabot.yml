@@ -1,0 +1,16 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "00:00"
+    timezone: Asia/Kolkata
+  open-pull-requests-limit: 99
+  ignore:
+  - dependency-name: node-telegram-bot-api
+    versions:
+    - 0.51.0
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
